@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaSoundcloud, FaVimeo, FaGithub } from "react-icons/fa";
+import { FaSoundcloud, FaVimeo, FaGithub } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
-import logo from "../images/nicetotouch-logo.png" 
-import gatsby from "../images/gatsby-logo.png" 
-import ipfs from "../images/ipfs-logo.png" 
+import logo from "../images/nicetotouch-logo.png"
+import gatsby from "../images/gatsby-logo.png"
+import ipfs from "../images/ipfs-logo.png"
 
 
 const SideBar = () => {
@@ -51,10 +51,9 @@ const SideBar = () => {
     </menu>
 
     <div className="btn-group">
-      <Link to="/" className="mob-menu-items" activeClassName="active"><button className="navbtn">Home</button></Link>
-      <Link to="/about" className="mob-menu-items" activeClassName="active"><button className="navbtn">About</button></Link>
-      <Link to="/projects" className="mob-menu-items" activeClassName="active"><button className="navbtn">Projects</button></Link>
-      <Link to="/contact" className="mob-menu-items" activeClassName="active"><button className="navbtn">Contact</button></Link>
+      <Link to="/" className="mob-menu-items" activeClassName="active"><button className="navbtn">home</button></Link>
+      <Link to="/music" className="mob-menu-items" activeClassName="active"><button className="navbtn">music</button></Link>
+      <Link to="https://vsco.co/nicetotouch/gallery" target="_blank" className="mob-menu-items" activeClassName="active"><button className="navbtn">photo</button></Link>
     </div>
 
     <div id="ntt-gatsby">
@@ -67,7 +66,7 @@ const SideBar = () => {
     <div id="ntt-ipfs">
       decentralized on<br/>
       <Link to="https://ipfs.io/" target="_blank">
-        <img src={ipfs} alt="Gastby" />
+        <img src={ipfs} alt="IPFS" />
       </Link>
     </div>
 

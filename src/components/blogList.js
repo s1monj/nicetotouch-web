@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import author from "../images/simon-sq-sm.png"
 
 
 const BlogList = () => {
@@ -33,20 +34,19 @@ const BlogList = () => {
     <main role="main">
       <div className="content">
 
-
-
-        <table style="max-width: 500px; margin-left: 50px; border: none">
-          <tbody><tr class="fs-no-hover">
-            <td style="vertical-align: middle; width:25%; min-width: 150px; padding: 40px; border: none">
-              <img src="simon-sq-sm.png" style="border-radius: 50%"/>
-            </td>
-            <td style="vertical-align: middle; padding-left: 0px; border: none">
-              I'm Simon, I develop open source software and live in Brooklyn, New York. Here are some other things I've created.
-            </td>
-          </tr>
-        </tbody></table>
-
-
+        <table id="ntt-author">
+          <tbody>
+            <tr>
+              <td id="ntt-author-imgbox">
+                <img src={author} alt="Photo" />
+              </td>
+              <td id="ntt-author-txtbox">
+                I'm Simon, I'm a software developer living in Brooklyn, New York.
+                Here are some other things I've created. Get in touch: <span class="ntt-white">its</span> at <span class="ntt-white">nicetotouch</span> dot <span class="ntt-white">com</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         {allMarkdownRemark.edges.map(({ node }) => (
           <article className="main-article">
@@ -54,7 +54,7 @@ const BlogList = () => {
               {/*<header className="header-article">
                 <h2 className="title-article"><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h2>
                 <div className="post-date"><span>{node.frontmatter.date}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-        </header>*/}
+                </header>*/}
 
               <div dangerouslySetInnerHTML={{ __html: node.html }}></div>
             </div>

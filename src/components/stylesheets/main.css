@@ -74,6 +74,38 @@
   margin-bottom: 6rem;
 }
 
+#ntt-author {
+  max-width: 600px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+#ntt-author-imgbox {
+  vertical-align: middle;
+  width: 25%;
+  width: 130px;
+  padding: 40px;
+  border: none;
+}
+
+#ntt-author-imgbox img {
+  border-radius: 50%;
+}
+
+#ntt-author-txtbox {
+  font-size: 0.7rem;
+  vertical-align: middle;
+  padding-left: 0px;
+  border: none;
+}
+
+.ntt-white {
+  color: #fff;
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
@@ -903,7 +935,10 @@ pre code {
   right: 0;
   bottom: 0;
   width: 12rem;
-  padding: 2rem 1rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
 }
 
 .sidebar-menu {
@@ -952,7 +987,10 @@ pre code {
   /* -webkit-justify-content: space-between; */
   /* -ms-flex-pack: justify; */
   /* justify-content: space-between; */
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
 }
 
 .sidebar-logo .logo {

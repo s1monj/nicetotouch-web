@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   siteMetadata: {
-    title: `nice to touch - generative art, nfts, music, video & photo`,
+    title: `generative art, nfts, music, video & photo`,
     description: ``,
     author: `nicetotouch.eth`,
     siteUrl: `https://nicetotouch.eth.link/`,
