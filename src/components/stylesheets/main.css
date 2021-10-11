@@ -54,21 +54,26 @@
   margin-bottom: 2rem;
 }
 
-.ntt-vimeo iframe {
+.ntt-preview iframe {
   display: block;
   margin: 0 auto;
 }
 
-.ntt-vimeo a {
+.ntt-preview img {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.ntt-preview a {
   font-size: 0.7rem;
   font-weight: 200;
 }
 
-.ntt-vimeo a:hover {
+.ntt-preview a:hover {
   color: #fff;
 }
 
-.ntt-vimeo p {
+.ntt-preview p {
   text-align: center;
   margin: 0;
   margin-bottom: 6rem;
